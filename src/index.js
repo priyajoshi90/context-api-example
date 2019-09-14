@@ -4,8 +4,10 @@ import {Provider} from 'react-redux';
 
 import App from './App';
 import configureStore from './store/configureStore';
+import {loadCourse} from './actions/courseAction';
  
 const store=configureStore();
+store.dispatch(loadCourse());
 
 // const lp=({
 //     ProfileId,
